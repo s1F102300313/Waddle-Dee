@@ -1,3 +1,7 @@
+import Handle from '../component/Parasol/Handle/Handle';
+import Parasol from '../component/Parasol/Parasol/Parasol';
+import EyeL from '../component/Waddle-Dee/Eyes/EyeL/EyeL';
+import EyeR from '../component/Waddle-Dee/Eyes/EyeR/EyeR';
 import styles from './index.module.css';
 
 const Home = () => {
@@ -11,37 +15,18 @@ const Home = () => {
         <div className={styles.face2} />
         <div className={styles.handL} />
         <div className={styles.handR} />
-        <div className={styles.handleBorder}>
-          <div className={styles.handleMiddle} />
-          <div className={styles.handleEnd} />
-          <div className={styles.handleBegin} />
-        </div>
+        <Handle />
         <div className={styles.shaft} />
         <div className={styles.star} />
         <div className={styles.starBorder} />
-        <div className={styles.redParasol} />
-        <div className={styles.whiteParasol} />
+        <Parasol />
         <div className={styles.cheekL} />
         <div className={styles.cheekR} />
         <EyeL />
-        <div className={styles.eyeRBase}>
-          <div className={styles.eyeLineR} />
-          <div className={styles.eyeLight1R} />
-          <div className={styles.eyeBackR} />
-          <div className={styles.eyeLight2R} />
-        </div>
+        <EyeR />
       </div>
     </div>
   );
 };
-
-const EyeL = () => (
-  <div className={styles.eyeLBase}>
-    <div className={styles.eyeLineL} />
-    <div className={styles.eyeLight1L} />
-    <div className={styles.eyeBackL} />
-    <div className={styles.eyeLight2L} />
-  </div>
-);
 
 export default Home;
