@@ -1,0 +1,11 @@
+.bodyShadow {
+  position: absolute;
+  top: 200px;
+  left: -190px;
+  z-index: 165;
+  width: 380px;
+  height: 190px;
+  background: linear-gradient(to top, #00f, #0000);
+  border-radius: 50%/30% 30% 70% 70%;
+  opacity: 0.1;
+}

@@ -1,0 +1,11 @@
+.body {
+  position: absolute;
+  top: 0;
+  left: -200px;
+  z-index: 40;
+  width: 400px;
+  height: 400px;
+  background-color: #ff6e2d;
+  border: #000 8px solid;
+  border-radius: 50% 50% 50% 50%/65% 65% 35% 35%;
+}

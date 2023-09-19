@@ -19,48 +19,11 @@
   transform: scale(0.7);
 }
 
-.legL {
-  position: absolute;
-  top: 300px;
-  left: 5px;
-  z-index: 0;
-  width: 230px;
-  height: 140px;
-  background-color: #fabe1e;
-  border: #000 8px solid;
-  border-radius: 40% 60% 40% 50%/40% 70% 30% 30%;
-}
-
-.legR {
-  position: absolute;
-  top: 300px;
-  left: -235px;
-  z-index: 1;
-  width: 230px;
-  height: 140px;
-  background-color: #fabe1e;
-  border: #000 8px solid;
-  border-radius: 60% 40% 50% 40%/70% 40% 30% 30%;
-}
-
-.handL {
-  position: absolute;
-  top: 90px;
-  left: 70px;
-  z-index: 2;
-  width: 180px;
-  height: 250px;
-  background-color: #ff6e2d;
-  border: #000 8px solid;
-  border-radius: 50%/60% 60% 40% 40%;
-  transform: rotate(120deg);
-}
-
 .handR {
   position: absolute;
   top: -80px;
   left: -180px;
-  z-index: 3;
+  z-index: 30;
   width: 180px;
   height: 250px;
   background-color: #ff6e2d;
@@ -69,23 +32,11 @@
   transform: rotate(10deg);
 }
 
-.body {
-  position: absolute;
-  top: 0;
-  left: -200px;
-  z-index: 4;
-  width: 400px;
-  height: 400px;
-  background-color: #ff6e2d;
-  border: #000 8px solid;
-  border-radius: 50% 50% 50% 50%/65% 65% 35% 35%;
-}
-
 .face1 {
   position: absolute;
   top: 20px;
   left: -130px;
-  z-index: 5;
+  z-index: 50;
   width: 260px;
   height: 260px;
   background-color: #eedcca;
@@ -96,7 +47,7 @@
   position: absolute;
   top: 100px;
   left: -180px;
-  z-index: 6;
+  z-index: 60;
   width: 360px;
   height: 230px;
   background-color: #eedcca;
@@ -107,7 +58,7 @@
   position: absolute;
   top: 155px;
   left: 75px;
-  z-index: 7;
+  z-index: 70;
   width: 70px;
   height: 40px;
   background-color: #efa278;
@@ -118,7 +69,7 @@
   position: absolute;
   top: 155px;
   left: -145px;
-  z-index: 8;
+  z-index: 80;
   width: 70px;
   height: 40px;
   background-color: #efa278;
@@ -129,7 +80,7 @@
   position: absolute;
   top: -550px;
   left: -90px;
-  z-index: 17;
+  z-index: 170;
   width: 30px;
   height: 400px;
   background-color: #fadd1e;
@@ -140,7 +91,7 @@
   position: absolute;
   top: -663px;
   left: -138px;
-  z-index: 24;
+  z-index: 240;
   width: 126px;
   height: 126px;
   clip-path: polygon(
@@ -162,7 +113,7 @@
   position: absolute;
   top: -650px;
   left: -125px;
-  z-index: 25;
+  z-index: 250;
   width: 100px;
   height: 100px;
   clip-path: polygon(

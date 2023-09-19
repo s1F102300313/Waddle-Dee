@@ -1,0 +1,11 @@
+.handleShadow {
+  position: absolute;
+  top: -67px;
+  left: -78px;
+  z-index: 215;
+  width: 106px;
+  height: 34px;
+  background: linear-gradient(to top, #fff, #3164ff);
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  opacity: 0.2;
+}

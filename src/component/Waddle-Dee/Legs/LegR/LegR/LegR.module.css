@@ -1,0 +1,11 @@
+.legR {
+  position: absolute;
+  top: 300px;
+  left: -235px;
+  z-index: 10;
+  width: 230px;
+  height: 140px;
+  background-color: #fabe1e;
+  border: #000 8px solid;
+  border-radius: 60% 40% 50% 40%/70% 40% 30% 30%;
+}
