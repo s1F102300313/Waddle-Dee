@@ -1,5 +1,6 @@
 import Handle from '../component/Parasol/Handle/Handle/Handle';
 import Parasol from '../component/Parasol/Parasol/Parasol';
+import { Star } from '../component/Parasol/Star/Star/Star';
 import Body from '../component/Waddle-Dee/Body/Body/Body';
 import EyeL from '../component/Waddle-Dee/Eyes/EyeL/EyeL';
 import EyeR from '../component/Waddle-Dee/Eyes/EyeR/EyeR';
@@ -21,8 +22,7 @@ const Home = () => {
         <div className={styles.handR} />
         <Handle />
         <div className={styles.shaft} />
-        <div className={styles.star} />
-        <div className={styles.starBorder} />
+        <Star />
         <Parasol />
         <div className={styles.cheekL} />
         <div className={styles.cheekR} />

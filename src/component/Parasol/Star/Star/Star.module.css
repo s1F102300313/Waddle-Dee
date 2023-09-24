@@ -1,0 +1,154 @@
+.starBase {
+  position: absolute;
+  top: -663px;
+  left: -138px;
+  z-index: 240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  height: 126px;
+}
+
+.starBorder {
+  z-index: 240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  height: 126px;
+  clip-path: polygon(
+    50% 0,
+    64.695% 29.775%,
+    97.555% 34.55%,
+    73.775% 57.725%,
+    79.39% 90.45%,
+    50% 75%,
+    20.61% 90.45%,
+    26.255% 57.725%,
+    2.445% 34.55%,
+    35.305% 29.775%
+  );
+  background-color: #000;
+  animation-name: star-border-rotate;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-border-rotate {
+  8.32% {
+    width: 126px;
+  }
+
+  8.33% {
+    width: 109px;
+  }
+
+  16.66% {
+    width: 109px;
+  }
+
+  16.67% {
+    width: 63px;
+  }
+
+  24.99% {
+    width: 63px;
+  }
+
+  25% {
+    width: 12px;
+  }
+
+  33.32% {
+    width: 12px;
+  }
+
+  33.33% {
+    width: 63px;
+  }
+
+  41.66% {
+    width: 63px;
+  }
+
+  41.67% {
+    width: 109px;
+  }
+
+  49.99% {
+    /* left: -106.5px; */
+    width: 109px;
+  }
+
+  50% {
+    width: 126px;
+  }
+
+  58.32% {
+    width: 126px;
+  }
+
+  58.33% {
+    width: 109px;
+  }
+
+  66.66% {
+    width: 109px;
+  }
+
+  66.67% {
+    width: 63px;
+  }
+
+  74.99% {
+    width: 63px;
+  }
+
+  75% {
+    width: 12px;
+  }
+
+  83.32% {
+    width: 12px;
+  }
+
+  83.33% {
+    width: 63px;
+  }
+
+  91.66% {
+    width: 63px;
+  }
+
+  91.67% {
+    width: 109px;
+  }
+
+  99.99% {
+    width: 109px;
+  }
+
+  100% {
+    width: 126px;
+  }
+}
+
+.star {
+  z-index: 250;
+  width: calc(100% - 26px);
+  height: calc(100% - 26px);
+  clip-path: polygon(
+    50% 0,
+    64.695% 29.775%,
+    97.555% 34.55%,
+    73.775% 57.725%,
+    79.39% 90.45%,
+    50% 75%,
+    20.61% 90.45%,
+    26.255% 57.725%,
+    2.445% 34.55%,
+    35.305% 29.775%
+  );
+  background-color: #fadd1e;
+}
