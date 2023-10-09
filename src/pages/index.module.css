@@ -8,6 +8,24 @@
   padding: 0 0.5rem;
 }
 
+.parasolButton {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.handLButton {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+}
+
+.eyeButton {
+  position: absolute;
+  top: 150px;
+  left: 30px;
+}
+
 .base {
   position: fixed;
   top: 50%;

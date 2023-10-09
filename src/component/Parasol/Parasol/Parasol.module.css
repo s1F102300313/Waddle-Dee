@@ -8,6 +8,18 @@
   background-color: #e30000;
   border: #000 8px solid;
   border-radius: 50% 50% 0 0/100% 100% 0% 0%;
+}
+
+.redParasolAnimation {
+  position: absolute;
+  top: -580px;
+  left: -325px;
+  z-index: 220;
+  width: 500px;
+  height: 300px;
+  background-color: #e30000;
+  border: #000 8px solid;
+  border-radius: 50% 50% 0 0/100% 100% 0% 0%;
   animation-name: red-rotate;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -35,6 +47,7 @@
   }
 }
 
+.whiteParasolAnimation,
 .whiteParasol {
   position: absolute;
   top: -580px;
@@ -45,6 +58,9 @@
   background-color: #f0f0f0;
   border: #000 8px solid;
   border-radius: 50% 50% 0 0/100% 100% 0% 0%;
+}
+
+.whiteParasolAnimation {
   animation-name: white-rotate;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -82,12 +98,40 @@
   border: #000 8px solid;
   border-right: #000 4px solid;
   border-radius: 100% 0 0 0/100% 100% 0% 0%;
+  opacity: 0;
+}
+
+.redParasol1Animation {
+  position: absolute;
+  top: -580px;
+  left: -325px;
+  z-index: 220;
+  width: 250px;
+  height: 300px;
+  background-color: #e30000;
+  border: #000 8px solid;
+  border-right: #000 4px solid;
+  border-radius: 100% 0 0 0/100% 100% 0% 0%;
   animation-name: red-rotate12;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
 
 .whiteParasol1 {
+  position: absolute;
+  top: -580px;
+  left: -291.5px;
+  z-index: 230;
+  width: 216.5px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border: #000 8px solid;
+  border-right: #000 4px solid;
+  border-radius: 100% 0 0 0/100% 100% 0% 0%;
+  opacity: 0;
+}
+
+.whiteParasol1Animation {
   position: absolute;
   top: -580px;
   left: -291.5px;
@@ -114,12 +158,40 @@
   border: #000 8px solid;
   border-left: #000 4px solid;
   border-radius: 0 100% 0 0/100% 100% 0% 0%;
+  opacity: 0;
+}
+
+.redParasol2Animation {
+  position: absolute;
+  top: -580px;
+  left: -75px;
+  z-index: 230;
+  width: 216.5px;
+  height: 300px;
+  background-color: #e30000;
+  border: #000 8px solid;
+  border-left: #000 4px solid;
+  border-radius: 0 100% 0 0/100% 100% 0% 0%;
   animation-name: red-rotate12;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
 }
 
 .whiteParasol2 {
+  position: absolute;
+  top: -580px;
+  left: -75px;
+  z-index: 220;
+  width: 250px;
+  height: 300px;
+  background-color: #f0f0f0;
+  border: #000 8px solid;
+  border-left: #000 4px solid;
+  border-radius: 0 100% 0 0/100% 100% 0% 0%;
+  opacity: 0;
+}
+
+.whiteParasol2Animation {
   position: absolute;
   top: -580px;
   left: -75px;

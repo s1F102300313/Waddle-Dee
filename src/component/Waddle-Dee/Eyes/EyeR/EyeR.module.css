@@ -6,11 +6,71 @@
   scale: 1.1;
 }
 
+.eyeRWrap,
+.eyeRWrapAnimation {
+  position: absolute;
+  top: 50px;
+  left: -70px;
+  z-index: 130;
+  width: 40px;
+  height: 100px;
+  overflow: hidden;
+  border-top: none;
+}
+
+.eyeRWrapAnimation {
+  animation-name: eye-r-wink;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes eye-r-wink {
+  30% {
+    top: 50px;
+    left: -70px;
+    width: 40px;
+    height: 100px;
+    border-top: none;
+  }
+
+  69.99% {
+    top: 50px;
+    left: -70px;
+    width: 40px;
+    height: 100px;
+    border-top: none;
+  }
+
+  70% {
+    top: 120px;
+    left: -80px;
+    width: 60px;
+    height: 0;
+    border-top: 7px solid #000;
+  }
+
+  99.99% {
+    top: 120px;
+    left: -80px;
+    width: 60px;
+    height: 0;
+    border-top: 7px solid #000;
+  }
+
+  100% {
+    top: 50px;
+    left: -70px;
+    width: 40px;
+    height: 100px;
+    border-top: none;
+  }
+}
+
 .eyeLight2R {
   position: absolute;
-  top: 100px;
-  left: -65px;
-  z-index: 130;
+  bottom: 5px;
+  left: 5px;
+  z-index: 135;
   width: 30px;
   height: 45px;
   background-color: #895142;
@@ -19,8 +79,8 @@
 
 .eyeBackR {
   position: absolute;
-  top: 55px;
-  left: -65px;
+  bottom: 30px;
+  left: 5px;
   z-index: 140;
   width: 30px;
   height: 65px;
@@ -30,8 +90,8 @@
 
 .eyeLight1R {
   position: absolute;
-  top: 59px;
-  left: -60px;
+  bottom: 56px;
+  left: 10px;
   z-index: 150;
   width: 20px;
   height: 35px;
@@ -41,8 +101,8 @@
 
 .eyeLineR {
   position: absolute;
-  top: 50px;
-  left: -70px;
+  bottom: 0;
+  left: 0;
   z-index: 160;
   width: 40px;
   height: 100px;

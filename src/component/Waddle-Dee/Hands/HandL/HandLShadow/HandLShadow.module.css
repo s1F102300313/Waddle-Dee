@@ -1,4 +1,5 @@
-.handLShadow {
+.handLShadow,
+.shakeHandLShadowAnimation {
   position: absolute;
   top: 230px;
   left: 135px;
@@ -8,4 +9,18 @@
   background: linear-gradient(to top, #00f, #0000);
   border-radius: 50%/30% 30% 70% 70%;
   opacity: 0.1;
+}
+
+.shakeHandLShadowAnimation {
+  animation-name: shake-hand-l-shadow;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-hand-l-shadow {
+  70% {
+    top: 200px;
+    left: 140px;
+    transform: rotate(-20deg);
+  }
 }

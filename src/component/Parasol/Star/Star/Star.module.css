@@ -30,6 +30,28 @@
     35.305% 29.775%
   );
   background-color: #000;
+}
+
+.starBorderAnimation {
+  z-index: 240;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  height: 126px;
+  clip-path: polygon(
+    50% 0,
+    64.695% 29.775%,
+    97.555% 34.55%,
+    73.775% 57.725%,
+    79.39% 90.45%,
+    50% 75%,
+    20.61% 90.45%,
+    26.255% 57.725%,
+    2.445% 34.55%,
+    35.305% 29.775%
+  );
+  background-color: #000;
   animation-name: star-border-rotate;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -77,7 +99,6 @@
   }
 
   49.99% {
-    /* left: -106.5px; */
     width: 109px;
   }
 
@@ -151,4 +172,45 @@
     35.305% 29.775%
   );
   background-color: #fadd1e;
+}
+
+.starAnimation {
+  z-index: 250;
+  width: calc(100% - 26px);
+  height: calc(100% - 26px);
+  clip-path: polygon(
+    50% 0,
+    64.695% 29.775%,
+    97.555% 34.55%,
+    73.775% 57.725%,
+    79.39% 90.45%,
+    50% 75%,
+    20.61% 90.45%,
+    26.255% 57.725%,
+    2.445% 34.55%,
+    35.305% 29.775%
+  );
+  background-color: #fadd1e;
+  animation-name: star-color;
+  animation-duration: 0.75s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes star-color {
+  0% {
+    opacity: 1;
+  }
+
+  16.66% {
+    opacity: 1;
+  }
+
+  49.9% {
+    opacity: 0.85;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }

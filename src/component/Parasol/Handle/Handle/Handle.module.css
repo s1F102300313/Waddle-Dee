@@ -4,12 +4,16 @@
   left: -75px;
 }
 
-.handleBox {
+.handleBox,
+.handleBoxAnimation {
   position: absolute;
   right: -25px;
   z-index: 201;
   width: 150px;
   height: 75px;
+}
+
+.handleBoxAnimation {
   animation-name: handle-box-move;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -17,254 +21,259 @@
 
 @keyframes handle-box-move {
   0% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
+    width: 150px;
   }
 
   8.32% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 150px;
   }
 
   8.33% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 123px;
   }
 
   16.66% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 123px;
   }
 
   16.67% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 75px;
   }
 
   24.99% {
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 75px;
   }
 
   25% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 50px;
   }
 
   33.32% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 50px;
   }
 
   33.33% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 75px;
   }
 
   41.66% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 75px;
   }
 
   41.67% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 123px;
   }
 
   49.99% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 123px;
   }
 
   50.00% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 150px;
   }
 
   58.32% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 150px;
   }
 
   58.33% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 123px;
   }
 
   66.66% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 123px;
   }
 
   66.67% {
-    right: -25px;
-    left: auto;
+    right: auto;
+    left: -25px;
     width: 75px;
   }
 
   74.99% {
+    right: auto;
+    left: -25px;
+    width: 75px;
+  }
+
+  75% {
+    right: -25px;
+    left: auto;
+    width: 50px;
+  }
+
+  83.32% {
+    right: -25px;
+    left: auto;
+    width: 50px;
+  }
+
+  83.33% {
     right: -25px;
     left: auto;
     width: 75px;
   }
 
-  75% {
-    right: auto;
-    left: -25px;
-    width: 50px;
-  }
-
-  83.32% {
-    right: auto;
-    left: -25px;
-    width: 50px;
-  }
-
-  83.33% {
-    right: auto;
-    left: -25px;
-    width: 75px;
-  }
-
   91.66% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 75px;
   }
 
   91.67% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 123px;
   }
 
   99.99% {
-    right: auto;
-    left: -25px;
+    right: -25px;
+    left: auto;
     width: 123px;
   }
 
   100% {
-    left: -25px;
+    right: -25px;
+    left: auto;
+    width: 150px;
   }
 }
 
-.handleEnd {
+/* 50.00% { */
+
+.handleEnd,
+.handleEndAnimation {
   position: absolute;
   top: -25px;
-  left: 50px;
+  left: 0;
   z-index: 180;
   width: 50px;
   height: 50px;
   background-color: #3164ff;
   border: #000 8px solid;
   border-radius: 50%;
+}
+
+.handleEndAnimation {
   animation-name: handle-end-rotate;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
 }
 
 @keyframes handle-end-rotate {
-  0% {
-    right: 0;
-    left: auto;
+  16.66% {
+    right: auto;
+    left: 0;
+    width: 50px;
+    border: #000 8px solid;
+    border-radius: 50%;
+  }
+
+  16.67% {
+    right: auto;
+    left: 0;
+    width: 25px;
+    border-right: none;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
   }
 
   24.99% {
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
+    width: 25px;
+    background-color: #3164ff;
+    border: #000 8px solid;
+    border-right: none;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
   }
 
   25% {
-    right: auto;
-    left: 0;
+    right: 0;
+    left: auto;
+    background-color: #0000;
+    border-color: #0000;
   }
 
-  66.66% {
-    right: auto;
-    left: 0;
+  33.32% {
+    right: 0;
+    left: auto;
+    background-color: #0000;
+    border-color: #0000;
+  }
+
+  33.33% {
+    right: 0;
+    left: auto;
+    width: 25px;
+    background-color: #3164ff;
+    border: #000 8px solid;
+    border-left: none;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+  }
+
+  41.66% {
+    right: 0;
+    left: auto;
+    width: 25px;
+    background-color: #3164ff;
+    border: #000 8px solid;
+    border-left: none;
+    border-radius: 0 100% 100% 0/0 50% 50% 0;
+  }
+
+  41.67% {
+    right: 0;
+    left: auto;
     width: 50px;
     border: #000 8px solid;
     border-radius: 50%;
   }
 
-  66.67% {
-    right: auto;
-    left: 0;
-    width: 25px;
-    border-right: none;
-    border-radius: 100% 0 0 100%/50% 0 0 50%;
+  50% {
+    right: 0;
+    left: auto;
   }
 
   74.99% {
-    right: auto;
-    left: 0;
-    width: 25px;
-    background-color: #3164ff;
-    border: #000 8px solid;
-    border-right: none;
-    border-radius: 100% 0 0 100%/50% 0 0 50%;
+    right: 0;
+    left: auto;
   }
 
   75% {
-    right: 0;
-    left: auto;
-    background-color: #0000;
-    border-color: #0000;
-  }
-
-  83.32% {
-    right: 0;
-    left: auto;
-    background-color: #0000;
-    border-color: #0000;
-  }
-
-  83.33% {
-    right: 0;
-    left: auto;
-    width: 25px;
-    background-color: #3164ff;
-    border: #000 8px solid;
-    border-left: none;
-    border-radius: 0 100% 100% 0/0 50% 50% 0;
-  }
-
-  91.66% {
-    right: 0;
-    left: auto;
-    width: 25px;
-    background-color: #3164ff;
-    border: #000 8px solid;
-    border-left: none;
-    border-radius: 0 100% 100% 0/0 50% 50% 0;
-  }
-
-  91.67% {
-    right: 0;
-    left: auto;
-    width: 50px;
-    border: #000 8px solid;
-    border-radius: 50%;
-  }
-
-  100% {
-    right: 0;
-    left: auto;
+    right: auto;
+    left: 0;
   }
 }
 
@@ -280,13 +289,17 @@
   border-radius: 0 0 50% 50%/0 0 10% 10%;
 }
 
-.handleBorder {
+.handleBorder,
+.handleBorderAnimation {
   z-index: 200;
   width: 100%;
   height: 100%;
   border: #000 50px solid;
   border-top: none;
   border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+
+.handleBorderAnimation {
   animation-name: handle-border-rotate;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
@@ -338,7 +351,8 @@
   }
 }
 
-.handleMiddle {
+.handleMiddle,
+.handleMiddleAnimation {
   position: absolute;
   top: 0;
   left: 8px;
@@ -348,6 +362,9 @@
   border: #3164ff 34px solid;
   border-top: none;
   border-radius: 0 0 50% 50%/0 0 100% 100%;
+}
+
+.handleMiddleAnimation {
   animation-name: handle-middle-rotate;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;

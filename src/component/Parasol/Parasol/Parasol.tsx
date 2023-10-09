@@ -1,15 +1,14 @@
+import type { ParasolProps } from '../../../types/type';
 import styles from './Parasol.module.css';
 
-const Parasol = () => (
+const Parasol = ({ isParasolMove }: ParasolProps) => (
   <div>
-    <div className={styles.redParasol} />
-    <div className={styles.whiteParasol} />
-    <div className={styles.parasolView}>
-      <div className={styles.redParasol1} />
-      <div className={styles.redParasol2} />
-      <div className={styles.whiteParasol1} />
-      <div className={styles.whiteParasol2} />
-    </div>
+    <div className={isParasolMove ? styles.redParasolAnimation : styles.redParasol} />
+    <div className={isParasolMove ? styles.whiteParasolAnimation : styles.whiteParasol} />
+    <div className={isParasolMove ? styles.redParasol1Animation : styles.redParasol1} />
+    <div className={isParasolMove ? styles.redParasol2Animation : styles.redParasol2} />
+    <div className={isParasolMove ? styles.whiteParasol1Animation : styles.whiteParasol1} />
+    <div className={isParasolMove ? styles.whiteParasol2Animation : styles.whiteParasol2} />
   </div>
 );
 export default Parasol;

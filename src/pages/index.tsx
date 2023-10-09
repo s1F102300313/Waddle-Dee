@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Handle from '../component/Parasol/Handle/Handle/Handle';
 import Parasol from '../component/Parasol/Parasol/Parasol';
 import { Star } from '../component/Parasol/Star/Star/Star';
@@ -10,24 +11,36 @@ import LegR from '../component/Waddle-Dee/Legs/LegR/LegR/LegR';
 import styles from './index.module.css';
 
 const Home = () => {
+  const [isParasolMove, setIsParasolMove] = useState(false);
+  const [isShakeHand, setIsShakeHand] = useState(false);
+  const [isWink, setIsWink] = useState(false);
   return (
     <div className={styles.container}>
+      <button className={styles.parasolButton} onClick={() => setIsParasolMove(!isParasolMove)}>
+        傘を回す
+      </button>
+      <button className={styles.handLButton} onClick={() => setIsShakeHand(!isShakeHand)}>
+        左手を動かす
+      </button>
+      <button className={styles.eyeButton} onClick={() => setIsWink(!isWink)}>
+        まばたきさせる
+      </button>
       <div className={styles.base}>
         <Body />
         <LegL />
         <LegR />
         <div className={styles.face1} />
         <div className={styles.face2} />
-        <HandL />
+        <HandL isShakeHand={isShakeHand} />
         <div className={styles.handR} />
-        <Handle />
+        <Handle isParasolMove={isParasolMove} />
         <div className={styles.shaft} />
-        <Star />
-        <Parasol />
+        <Star isParasolMove={isParasolMove} />
+        <Parasol isParasolMove={isParasolMove} />
         <div className={styles.cheekL} />
         <div className={styles.cheekR} />
-        <EyeL />
-        <EyeR />
+        <EyeL isWink={isWink} />
+        <EyeR isWink={isWink} />
       </div>
     </div>
   );
