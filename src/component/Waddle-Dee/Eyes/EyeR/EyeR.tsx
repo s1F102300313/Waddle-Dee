@@ -1,7 +1,7 @@
 import type { EyeProps } from '../../../../types/type';
 import styles from './EyeR.module.css';
 
-const EyeR = ({ isWink }: EyeProps) => (
+export const EyeR = ({ isWink }: EyeProps) => (
   <div className={styles.eyeRBase}>
     <div className={isWink ? styles.eyeRWrapAnimation : styles.eyeRWrap}>
       <div className={styles.eyeLineR} />
@@ -11,5 +11,3 @@ const EyeR = ({ isWink }: EyeProps) => (
     </div>
   </div>
 );
-
-export default EyeR;

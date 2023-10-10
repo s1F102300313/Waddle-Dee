@@ -1,11 +1,9 @@
-import LegRShadow from '../LegRShadow/LegRShadow';
+import type { LegProps } from '../../../../../types/type';
+import { LegRShadow } from '../LegRShadow/LegRShadow';
 import styles from './LegR.module.css';
 
-const LegR = () => (
-  <div>
-    <div className={styles.legR} />
+export const LegR = ({ isJump }: LegProps) => (
+  <div className={isJump ? styles.jumpRAnimation : styles.legR}>
     <LegRShadow />
   </div>
 );
-
-export default LegR;

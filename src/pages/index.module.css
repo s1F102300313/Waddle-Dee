@@ -26,7 +26,14 @@
   left: 30px;
 }
 
-.base {
+.legButton {
+  position: absolute;
+  top: 200px;
+  left: 30px;
+}
+
+.base,
+.jumpBaseAnimation {
   position: fixed;
   top: 50%;
   left: 50%;
@@ -37,17 +44,29 @@
   transform: scale(0.7);
 }
 
-.handR {
-  position: absolute;
-  top: -80px;
-  left: -180px;
-  z-index: 30;
-  width: 180px;
-  height: 250px;
-  background-color: #ff6e2d;
-  border: #000 8px solid;
-  border-radius: 50%/60% 60% 40% 40%;
-  transform: rotate(10deg);
+.jumpBaseAnimation {
+  animation-name: jump-base-move;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump-base-move {
+  5% {
+    top: 50%;
+  }
+
+  35% {
+    top: 30%;
+  }
+
+  40% {
+    top: 30%;
+  }
+
+  100% {
+    top: 50%;
+  }
 }
 
 .face1 {

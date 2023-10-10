@@ -1,19 +1,21 @@
 import { useState } from 'react';
-import Handle from '../component/Parasol/Handle/Handle/Handle';
-import Parasol from '../component/Parasol/Parasol/Parasol';
+import { Handle } from '../component/Parasol/Handle/Handle/Handle';
+import { Parasol } from '../component/Parasol/Parasol/Parasol';
 import { Star } from '../component/Parasol/Star/Star/Star';
-import Body from '../component/Waddle-Dee/Body/Body/Body';
-import EyeL from '../component/Waddle-Dee/Eyes/EyeL/EyeL';
-import EyeR from '../component/Waddle-Dee/Eyes/EyeR/EyeR';
-import HandL from '../component/Waddle-Dee/Hands/HandL/HandL/HandL';
-import LegL from '../component/Waddle-Dee/Legs/LegL/LegL/LegL';
-import LegR from '../component/Waddle-Dee/Legs/LegR/LegR/LegR';
+import { Body } from '../component/Waddle-Dee/Body/Body/Body';
+import { EyeL } from '../component/Waddle-Dee/Eyes/EyeL/EyeL';
+import { EyeR } from '../component/Waddle-Dee/Eyes/EyeR/EyeR';
+import { HandL } from '../component/Waddle-Dee/Hands/HandL/HandL/HandL';
+import { HandR } from '../component/Waddle-Dee/Hands/HandR/HandR/HandR';
+import { LegL } from '../component/Waddle-Dee/Legs/LegL/LegL/LegL';
+import { LegR } from '../component/Waddle-Dee/Legs/LegR/LegR/LegR';
 import styles from './index.module.css';
 
 const Home = () => {
   const [isParasolMove, setIsParasolMove] = useState(false);
   const [isShakeHand, setIsShakeHand] = useState(false);
   const [isWink, setIsWink] = useState(false);
+  const [isJump, setIsJump] = useState(false);
   return (
     <div className={styles.container}>
       <button className={styles.parasolButton} onClick={() => setIsParasolMove(!isParasolMove)}>
@@ -25,18 +27,21 @@ const Home = () => {
       <button className={styles.eyeButton} onClick={() => setIsWink(!isWink)}>
         まばたきさせる
       </button>
-      <div className={styles.base}>
+      <button className={styles.legButton} onClick={() => setIsJump(!isJump)}>
+        ジャンプさせる
+      </button>
+      <div className={isJump ? styles.jumpBaseAnimation : styles.base}>
         <Body />
-        <LegL />
-        <LegR />
+        <LegL isJump={isJump} />
+        <LegR isJump={isJump} />
         <div className={styles.face1} />
         <div className={styles.face2} />
-        <HandL isShakeHand={isShakeHand} />
-        <div className={styles.handR} />
-        <Handle isParasolMove={isParasolMove} />
+        <HandL isShakeHand={isShakeHand} isJump={isJump} />
+        <HandR />
+        <Handle isJump={isJump} isParasolMove={isParasolMove} />
         <div className={styles.shaft} />
-        <Star isParasolMove={isParasolMove} />
-        <Parasol isParasolMove={isParasolMove} />
+        <Star isJump={isJump} isParasolMove={isParasolMove} />
+        <Parasol isJump={isJump} isParasolMove={isParasolMove} />
         <div className={styles.cheekL} />
         <div className={styles.cheekR} />
         <EyeL isWink={isWink} />

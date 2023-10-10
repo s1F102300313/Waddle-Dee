@@ -1,7 +1,7 @@
 import type { ParasolProps } from '../../../../types/type';
 import styles from './Handle.module.css';
 
-const Handle = ({ isParasolMove }: ParasolProps) => (
+export const Handle = ({ isParasolMove }: ParasolProps) => (
   <div className={styles.handleBase}>
     <div className={isParasolMove ? styles.handleBoxAnimation : styles.handleBox}>
       <div className={isParasolMove ? styles.handleBorderAnimation : styles.handleBorder} />
@@ -12,5 +12,3 @@ const Handle = ({ isParasolMove }: ParasolProps) => (
     <div className={styles.handleBegin} />
   </div>
 );
-
-export default Handle;

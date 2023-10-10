@@ -1,11 +1,16 @@
 .handL,
-.shakeHandLAnimation {
+.shakeHandLAnimation,
+.jumpHandLAnimation {
   position: absolute;
   top: 90px;
   left: 70px;
   z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: end;
   width: 180px;
   height: 250px;
+  overflow: hidden;
   background-color: #ff6e2d;
   border: #000 8px solid;
   border-radius: 50%/60% 60% 40% 40%;
@@ -22,5 +27,29 @@
   70% {
     top: 70px;
     transform: rotate(100deg);
+  }
+}
+
+.jumpHandLAnimation {
+  animation-name: jump-hand-l;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump-hand-l {
+  5% {
+    transform: rotate(120deg);
+  }
+
+  25% {
+    top: 100px;
+    left: 60px;
+    transform: rotate(135deg);
+  }
+
+  60% {
+    top: 70px;
+    left: 80px;
+    transform: rotate(80deg);
   }
 }

@@ -1,0 +1,12 @@
+.handR {
+  position: absolute;
+  top: -80px;
+  left: -180px;
+  z-index: 30;
+  width: 180px;
+  height: 250px;
+  background-color: #ff6e2d;
+  border: #000 8px solid;
+  border-radius: 50%/60% 60% 40% 40%;
+  transform: rotate(10deg);
+}

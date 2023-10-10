@@ -1,11 +1,40 @@
-.legL {
+.legL,
+.jumpLAnimation {
   position: absolute;
   top: 300px;
   left: 5px;
   z-index: 0;
+  display: flex;
+  align-items: end;
+  justify-content: center;
   width: 230px;
   height: 140px;
+  overflow: hidden;
   background-color: #fabe1e;
   border: #000 8px solid;
   border-radius: 40% 60% 40% 50%/40% 70% 30% 30%;
+}
+
+.jumpLAnimation {
+  animation-name: jump-leg-l;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump-leg-l {
+  5% {
+    top: 300px;
+    transform: rotate(0);
+  }
+
+  25% {
+    top: 330px;
+    transform: rotate(35deg);
+  }
+
+  45% {
+    top: 290px;
+    transform: rotate(-10deg);
+  }
 }
