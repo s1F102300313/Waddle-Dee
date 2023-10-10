@@ -15,7 +15,7 @@
 
 .handleBoxAnimation {
   animation-name: handle-box-move;
-  animation-duration: 1.5s;
+  animation-duration: calc(3 * var(--parasol-rotate-duration));
   animation-iteration-count: infinite;
 }
 
@@ -188,7 +188,7 @@
 
 .handleEndAnimation {
   animation-name: handle-end-rotate;
-  animation-duration: 1.5s;
+  animation-duration: calc(3 * var(--parasol-rotate-duration));
   animation-iteration-count: infinite;
 }
 
@@ -301,7 +301,7 @@
 
 .handleBorderAnimation {
   animation-name: handle-border-rotate;
-  animation-duration: 1.5s;
+  animation-duration: calc(3 * var(--parasol-rotate-duration));
   animation-iteration-count: infinite;
 }
 
@@ -366,7 +366,7 @@
 
 .handleMiddleAnimation {
   animation-name: handle-middle-rotate;
-  animation-duration: 1.5s;
+  animation-duration: calc(3 * var(--parasol-rotate-duration));
   animation-iteration-count: infinite;
 }
 

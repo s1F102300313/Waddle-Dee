@@ -27,7 +27,7 @@
   );
   background-color: #00000020;
   animation-name: star-shadow-move;
-  animation-duration: 0.75s;
+  animation-duration: calc(1.5 * var(--parasol-rotate-duration));
   animation-iteration-count: infinite;
 }
 
