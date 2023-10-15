@@ -11,8 +11,6 @@
   background: radial-gradient(farthest-side, #000, #fff);
   border-radius: 50%;
   opacity: 1;
-
-  /* transform: var(--waddle-dee-scale); */
 }
 
 .jumpGroundShadowAnimation {
