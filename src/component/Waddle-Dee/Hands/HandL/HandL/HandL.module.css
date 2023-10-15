@@ -43,11 +43,17 @@
 
   25% {
     top: 100px;
-    left: 60px;
+    left: 65px;
     transform: rotate(135deg);
   }
 
-  80% {
+  75% {
+    top: 70px;
+    left: 80px;
+    transform: rotate(80deg);
+  }
+
+  85% {
     top: 70px;
     left: 80px;
     transform: rotate(80deg);
