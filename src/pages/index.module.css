@@ -10,38 +10,49 @@
 
 .parasolButton {
   position: absolute;
-  top: 50px;
-  left: 30px;
+  bottom: 10px;
+  left: 2.5%;
+  z-index: 10000;
+  width: 30%;
+  height: 10%;
 }
 
 .handLButton {
   position: absolute;
   top: 100px;
   left: 30px;
+  z-index: 10010;
 }
 
 .eyeButton {
   position: absolute;
-  top: 150px;
-  left: 30px;
+  bottom: 10px;
+  left: 35%;
+  z-index: 10020;
+  width: 30%;
+  height: 10%;
 }
 
 .legButton {
   position: absolute;
-  top: 200px;
-  left: 30px;
+  bottom: 10px;
+  left: 67.5%;
+  z-index: 10030;
+  width: 30%;
+  height: 10%;
 }
 
 .base,
 .jumpBaseAnimation {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 0;
+  top: var(--base-top);
+  left: var(--base-left);
+  z-index: 5;
   width: 0;
   height: 0;
   margin-top: 78px;
-  transform: var(--waddle-dee-scale);
+
+  /* transform: var(--waddle-dee-scale-pc); */
 }
 
 .jumpBaseAnimation {
@@ -53,19 +64,19 @@
 
 @keyframes jump-base-move {
   5% {
-    top: 50%;
+    top: var(--base-top);
   }
 
   35% {
-    top: 30%;
+    top: calc(var(--base-top) - 20%);
   }
 
   40% {
-    top: 30%;
+    top: calc(var(--base-top) - 20%);
   }
 
   100% {
-    top: 50%;
+    top: var(--base-top);
   }
 }
 
@@ -122,4 +133,16 @@
   height: 400px;
   background-color: #fadd1e;
   border: #000 8px solid;
+}
+
+.groundShadowBase {
+  position: fixed;
+  top: var(--base-top);
+  left: var(--base-left);
+  z-index: 0;
+  width: 0;
+  height: 0;
+  margin-top: 78px;
+
+  /* transform: var(--waddle-dee-scale-pc); */
 }

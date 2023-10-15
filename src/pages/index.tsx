@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import dynamic from 'next/dynamic';
+import { useEffect, useState } from 'react';
 import { Handle } from '../component/Parasol/Handle/Handle/Handle';
 import { Parasol } from '../component/Parasol/Parasol/Parasol';
 import { Star } from '../component/Parasol/Star/Star/Star';
@@ -12,26 +13,35 @@ import { LegR } from '../component/Waddle-Dee/Legs/LegR/LegR/LegR';
 import { GroundShadow } from '../component/Waddle-Dee/Shadow/GroundShadow';
 import styles from './index.module.css';
 
+const SimpleMDE = dynamic(() => import('react-simplemde-editor'), { ssr: false });
+
 const Home = () => {
   const [isParasolMove, setIsParasolMove] = useState(false);
   const [isShakeHand, setIsShakeHand] = useState(false);
   const [isWink, setIsWink] = useState(false);
   const [isJump, setIsJump] = useState(false);
+  const [isMobile, setIsMobile] = useState(true);
+  const scale = isMobile ? '0.5' : '0.8';
+  useEffect(() => {
+    console.log(navigator.userAgent);
+    setIsMobile(/(iPhone|Android.+Mobile)/.test(navigator.userAgent));
+    // const userDevice = navigator.userAgent;
+  }, []);
   return (
     <div className={styles.container}>
       <button className={styles.parasolButton} onClick={() => setIsParasolMove(!isParasolMove)}>
         傘を回す
       </button>
-      <button className={styles.handLButton} onClick={() => setIsShakeHand(!isShakeHand)}>
+      {/* <button className={styles.handLButton} onClick={() => setIsShakeHand(!isShakeHand)}>
         左手を動かす
-      </button>
+      </button> */}
       <button className={styles.eyeButton} onClick={() => setIsWink(!isWink)}>
         まばたきさせる
       </button>
       <button className={styles.legButton} onClick={() => setIsJump(!isJump)}>
         ジャンプさせる
       </button>
-      <div className={isJump ? styles.jumpBaseAnimation : styles.base}>
+      <div className={isJump ? styles.jumpBaseAnimation : styles.base} style={{ scale }}>
         <Body />
         <LegL isJump={isJump} />
         <LegR isJump={isJump} />
@@ -48,7 +58,9 @@ const Home = () => {
         <EyeL isWink={isWink} />
         <EyeR isWink={isWink} />
       </div>
-      <GroundShadow isJump={isJump} />
+      <div className={styles.groundShadowBase} style={{ scale }}>
+        <GroundShadow isJump={isJump} />
+      </div>
     </div>
   );
 };
