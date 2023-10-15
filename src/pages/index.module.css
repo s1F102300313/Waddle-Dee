@@ -13,8 +13,30 @@
   bottom: 10px;
   left: 2.5%;
   z-index: 10000;
+  flex: 1 1 auto;
   width: 30%;
   height: 10%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #ffa600 0%, #fedbd6 100%);
+  background-size: 200% auto;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 20px #fffadf; */
+  transition: 0.5s;
+}
+
+.parasolButton:hover {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
+}
+
+.parasolButton:active {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
 }
 
 .handLButton {
@@ -29,8 +51,30 @@
   bottom: 10px;
   left: 35%;
   z-index: 10020;
+  flex: 1 1 auto;
   width: 30%;
   height: 10%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #ffa600 0%, #fedbd6 100%);
+  background-size: 200% auto;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 20px #fffadf; */
+  transition: 0.5s;
+}
+
+.eyeButton:hover {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
+}
+
+.eyeButton:active {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
 }
 
 .legButton {
@@ -38,8 +82,30 @@
   bottom: 10px;
   left: 67.5%;
   z-index: 10030;
+  flex: 1 1 auto;
   width: 30%;
   height: 10%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(to top, #ffa600 0%, #fedbd6 100%);
+  background-size: 200% auto;
+  border-radius: 10px;
+
+  /* box-shadow: 0 0 20px #fffadf; */
+  transition: 0.5s;
+}
+
+.legButton:hover {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
+}
+
+.legButton:active {
+  color: #fff;
+  background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
+  background-position: right center;
 }
 
 .base,
@@ -51,8 +117,6 @@
   width: 0;
   height: 0;
   margin-top: 78px;
-
-  /* transform: var(--waddle-dee-scale-pc); */
 }
 
 .jumpBaseAnimation {
@@ -143,6 +207,4 @@
   width: 0;
   height: 0;
   margin-top: 78px;
-
-  /* transform: var(--waddle-dee-scale-pc); */
 }

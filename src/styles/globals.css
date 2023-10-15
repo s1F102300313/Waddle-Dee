@@ -16,8 +16,6 @@ a {
 
   --base-top: 40%;
   --base-left: 50%;
-  --waddle-dee-scale-pc: scale(0.8);
-  --waddle-dee-scale-mbile: scale(0.5);
   --parasol-rotate-duration: 0.5s;
   --jump-duration: 2s;
 }

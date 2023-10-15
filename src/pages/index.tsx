@@ -21,7 +21,8 @@ const Home = () => {
   const [isWink, setIsWink] = useState(false);
   const [isJump, setIsJump] = useState(false);
   const [isMobile, setIsMobile] = useState(true);
-  const scale = isMobile ? '0.5' : '0.8';
+  const scale = isMobile ? '0.45' : '0.8';
+  const font = isMobile ? 20 : 50;
   useEffect(() => {
     console.log(navigator.userAgent);
     setIsMobile(/(iPhone|Android.+Mobile)/.test(navigator.userAgent));
@@ -29,17 +30,29 @@ const Home = () => {
   }, []);
   return (
     <div className={styles.container}>
-      <button className={styles.parasolButton} onClick={() => setIsParasolMove(!isParasolMove)}>
+      <button
+        className={styles.parasolButton}
+        style={{ fontSize: font }}
+        onClick={() => setIsParasolMove(!isParasolMove)}
+      >
         傘を回す
       </button>
       {/* <button className={styles.handLButton} onClick={() => setIsShakeHand(!isShakeHand)}>
         左手を動かす
       </button> */}
-      <button className={styles.eyeButton} onClick={() => setIsWink(!isWink)}>
-        まばたきさせる
+      <button
+        className={styles.eyeButton}
+        style={{ fontSize: font }}
+        onClick={() => setIsWink(!isWink)}
+      >
+        まばたき
       </button>
-      <button className={styles.legButton} onClick={() => setIsJump(!isJump)}>
-        ジャンプさせる
+      <button
+        className={styles.legButton}
+        style={{ fontSize: font }}
+        onClick={() => setIsJump(!isJump)}
+      >
+        ジャンプ
       </button>
       <div className={isJump ? styles.jumpBaseAnimation : styles.base} style={{ scale }}>
         <Body />
