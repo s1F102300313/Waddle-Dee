@@ -27,7 +27,7 @@
 }
 
 @keyframes eye-l-wink {
-  30% {
+  9.99% {
     top: 50px;
     left: 30px;
     width: 40px;
@@ -35,29 +35,7 @@
     border-top: none;
   }
 
-  /* 40% {
-    top: 70px;
-    width: 40px;
-    height: 80px;
-    border-top: 5px solid #000;
-  }
-
-  69.99% {
-    top: 70px;
-    width: 40px;
-    height: 80px;
-    border-top: 5px solid #000;
-  } */
-
-  69.99% {
-    top: 50px;
-    left: 30px;
-    width: 40px;
-    height: 100px;
-    border-top: none;
-  }
-
-  70% {
+  10% {
     top: 120px;
     left: 20px;
     width: 60px;
@@ -65,7 +43,7 @@
     border-top: 7px solid #000;
   }
 
-  99.99% {
+  39.99% {
     top: 120px;
     left: 20px;
     width: 60px;
@@ -73,7 +51,7 @@
     border-top: 7px solid #000;
   }
 
-  100% {
+  40% {
     top: 50px;
     left: 30px;
     width: 40px;
