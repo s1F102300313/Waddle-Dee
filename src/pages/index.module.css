@@ -27,13 +27,13 @@
   transition: 0.5s;
 }
 
-.parasolButton:hover {
+.parasolButtonPC:hover {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
 }
 
-.parasolButton:active {
+.parasolButtonMobile:active {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
@@ -65,13 +65,13 @@
   transition: 0.5s;
 }
 
-.eyeButton:hover {
+.eyeButtonPC:hover {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
 }
 
-.eyeButton:active {
+.eyeButtonMobile:active {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
@@ -96,13 +96,13 @@
   transition: 0.5s;
 }
 
-.legButton:hover {
+.legButtonPC:hover {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
 }
 
-.legButton:active {
+.legButtonMobile:active {
   color: #fff;
   background-image: linear-gradient(to top, rgb(255 119 0) 0%, #fedbd6 100%);
   background-position: right center;
