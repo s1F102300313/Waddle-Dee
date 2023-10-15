@@ -47,7 +47,7 @@
     transform: rotate(135deg);
   }
 
-  60% {
+  80% {
     top: 70px;
     left: 80px;
     transform: rotate(80deg);

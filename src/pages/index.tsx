@@ -9,6 +9,7 @@ import { HandL } from '../component/Waddle-Dee/Hands/HandL/HandL/HandL';
 import { HandR } from '../component/Waddle-Dee/Hands/HandR/HandR/HandR';
 import { LegL } from '../component/Waddle-Dee/Legs/LegL/LegL/LegL';
 import { LegR } from '../component/Waddle-Dee/Legs/LegR/LegR/LegR';
+import { GroundShadow } from '../component/Waddle-Dee/Shadow/GroundShadow';
 import styles from './index.module.css';
 
 const Home = () => {
@@ -47,6 +48,7 @@ const Home = () => {
         <EyeL isWink={isWink} />
         <EyeR isWink={isWink} />
       </div>
+      <GroundShadow isJump={isJump} />
     </div>
   );
 };

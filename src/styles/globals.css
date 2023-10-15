@@ -14,5 +14,7 @@ a {
 * {
   box-sizing: border-box;
 
+  --waddle-dee-scale: scale(0.7);
   --parasol-rotate-duration: 0.5s;
+  --jump-duration: 2s;
 }

@@ -15,3 +15,7 @@ export type EyeProps = {
 export type LegProps = {
   isJump: boolean;
 };
+
+export type GroundProps = {
+  isJump: boolean;
+};

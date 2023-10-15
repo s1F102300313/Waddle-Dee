@@ -25,7 +25,7 @@
     transform: scale(0.9, 1.1);
   } */
 
-  40% {
+  25% {
     transform: scale(0.9, 1.1);
   }
 
@@ -33,7 +33,11 @@
     transform: scale(1.1, 0.9);
   } */
 
-  80% {
+  55% {
+    transform: scale(1.1, 0.9);
+  }
+
+  85% {
     transform: scale(1.1, 0.9);
   }
 }

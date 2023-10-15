@@ -1,0 +1,48 @@
+.groundShadow,
+.jumpGroundShadowAnimation {
+  --width: 500px;
+
+  position: absolute;
+  top: calc(50% + 300px);
+  left: calc(50% + var(--width) / -2);
+  z-index: -1;
+  width: var(--width);
+  height: 130px;
+  background: radial-gradient(farthest-side, #000, #fff);
+  border-radius: 50%;
+  opacity: 1;
+  transform: var(--waddle-dee-scale);
+}
+
+.jumpGroundShadowAnimation {
+  animation-name: jump-shadow-move;
+  animation-duration: var(--jump-duration);
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump-shadow-move {
+  5% {
+    left: calc(50% + var(--width) / -2);
+    width: var(--width);
+    opacity: 1;
+  }
+
+  35% {
+    left: calc(50% + (var(--width) / -2) - 25px);
+    width: calc(var(--width) + 50px);
+    opacity: 0.4;
+  }
+
+  40% {
+    left: calc(50% + (var(--width) / -2) - 25px);
+    width: calc(var(--width) + 50px);
+    opacity: 0.4;
+  }
+
+  100% {
+    left: calc(50% + var(--width) / -2);
+    width: var(--width);
+    opacity: 1;
+  }
+}
