@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="ja">
       <Head>
-        <title>Create Next App</title>
+        <title>Css Waddle-Dee</title>
         <meta name="css-Waddle-Dee" content="猫月がcssで作ったワドルディ" />
         <link rel="icon" href="favicon.ico" />
       </Head>
